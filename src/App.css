@@ -1,8 +1,9 @@
 .App {
   text-align: center;
+  padding: 0.5em 2em;
 }
 
-.row.react-bootstrap-table-pagination{
+.row.react-bootstrap-table-pagination {
   margin-right: 0;
-    margin-left: 0;
+  margin-left: 0;
 }
