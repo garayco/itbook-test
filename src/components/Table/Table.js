@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 import axios from "axios";
 import useDebounce from "../../Utils/useDebounce";
 import { Table, Modal, Image, Tooltip, Row, Col, Button } from "antd";
@@ -240,7 +239,7 @@ const TableComponent = () => {
         onCancel={closeModal}
         bodyStyle={{ textAlign: "center" }}
       >
-        {modalData && <img width={400} src={modalData.image} />}
+        {modalData && <Image width={400} src={modalData.image} />}
       </Modal>
 
       <Row style={{ marginBottom: "1em" }}>
@@ -296,7 +295,5 @@ const TableComponent = () => {
     </>
   );
 };
-
-TableComponent.propTypes = {};
 
 export default TableComponent;
