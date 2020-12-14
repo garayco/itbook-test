@@ -240,7 +240,7 @@ const TableComponent = () => {
         onCancel={closeModal}
         bodyStyle={{ textAlign: "center" }}
       >
-        <Image width={400} src={modalData?.image} />
+        {modalData && <img width={400} src={modalData.image} />}
       </Modal>
 
       <Row style={{ marginBottom: "1em" }}>
